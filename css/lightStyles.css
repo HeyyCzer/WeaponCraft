@@ -1,0 +1,14 @@
+body {
+	background-color: #f4f4f4;
+}
+
+.calc-title {
+	color: rgb(17, 24, 39);
+}
+.calc-title hr {
+	background-color: rgb(17, 24, 39);
+}
+
+.calc-desc {
+	color: rgb(55, 65, 81);
+}

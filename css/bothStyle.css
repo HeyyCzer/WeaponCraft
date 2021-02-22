@@ -1,0 +1,37 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.calc-title {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+.calc-title hr {
+	width: 25%;
+	height: 1px;
+	border-radius: 100%;
+}
+
+select {
+	height: 30px;
+	width: 125px;
+}
+
+a.toggleDark {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#imagemArma {
+	width: 256px;
+}
+
+.recipe > label > input {
+	text-align: center;
+	margin-left: 10px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<title>Metrópole - Crafting Armas</title>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+		<link rel="stylesheet" href="css/bothStyle.css" />
+		<link id="currentStyle" rel="stylesheet" href="css/darkStyles.css" />
+	</head>
+
+	<body>
+		<section>
+			<!-- HEADER -->
+			<div class="calc-title">
+				<h2 class="text-lg calc-title text-center pt-5">Calculadora Crafting</h2>
+				<hr class="pb-1 rounded" />
+			</div>
+
+			<!-- BODY -->
+			<div class="calc-desc m-5 text-center">
+				<p id="selectOne">Selecione um armamento abaixo para calcular seus componentes.</p>
+
+				<select name="Armamentos" id="armas">
+					<option id="nullValue" value="null">Escolha um</option>
+					<option value="ak47">Ak-47</option>
+					<option value="parafal">Parafal</option>
+					<option value="tec9">Tec-9</option>
+					<option value="fiveseven">FiveSeven</option>
+					<option value="hk">HK</option>
+				</select>
+
+				<input type="number" id="quantity" placeholder="Quantidade" />
+
+				<!-- RECIPE - ITENS -->
+				<div class="recipe p-5">
+					<h3 class="calc-title mb-1 m-5">Quantidades necessárias</h3>
+
+					<img id="imagemArma" src="imgs/ak47.png" class="img-responsive rounded" alt="img"><br>
+
+					<label>Peças de Arma: <input id="pecas" type="number" readonly></label><br>
+					<label>Placas de Metal: <input id="placas" type="number" readonly></label><br>
+					<label>Molas: <input id="molas" type="number" readonly></label><br>
+					<label>Gatilhos: <input id="gatilhos" type="number" readonly></label><br>
+				</div>
+			</div>
+		</section>
+
+		<!-- TOGGLE DARK -->
+		<a href="#" class="toggleDark">
+			<i class="fas fa-adjust"></i>
+		</a>
+
+		<!-- SCRIPTS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+		<script src="js/theme.js"></script>
+		<script src="js/quantity.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
