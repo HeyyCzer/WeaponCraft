@@ -40,7 +40,7 @@ $("#quantity").change(function () {
 	$("#molasCost").val(formatMoney(components.molas * weapons[value].molas * quantity));
 	$("#gatilhosCost").val(formatMoney(components.gatilhos * weapons[value].gatilhos * quantity));
 
-	$("#custoTotal").text(formatMoney((components.gatilhos * weapons[value].gatilhos) + (components.molas * weapons[value].molas) + (components.placas * weapons[value].placas) * quantity));
+	$("#custoTotal").text(formatMoney((components.gatilhos * weapons[value].gatilhos * quantity) + (components.molas * weapons[value].molas * quantity) + (components.placas * weapons[value].placas * quantity)));
 });
 
 function formatMoney(number) {
