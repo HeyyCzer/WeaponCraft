@@ -30,3 +30,9 @@ const weapons = {
 		gatilhos: 0,
 	},
 }
+
+const components = {
+	placas: 10000,
+	molas: 5000,
+	gatilhos: 5000,
+}

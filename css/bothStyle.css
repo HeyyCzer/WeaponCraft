@@ -34,11 +34,19 @@ a.toggleDark {
 .recipe > label > input {
 	text-align: center;
 	margin-left: 10px;
+	max-width: 250px;
 }
 
 footer {
+	display: none;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
 	bottom: 20px;
+}
+
+@media (min-width: 762px) {
+	footer {
+		display: inherit;
+	}
 }
