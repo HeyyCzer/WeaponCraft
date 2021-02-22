@@ -35,3 +35,10 @@ a.toggleDark {
 	text-align: center;
 	margin-left: 10px;
 }
+
+footer {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+}
