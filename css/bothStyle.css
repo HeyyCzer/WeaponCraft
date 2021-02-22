@@ -38,6 +38,13 @@ a.toggleDark {
 	max-width: 250px;
 }
 
+input, select {
+	border-radius: 5px;
+	border: 1px solid #d4d4d4;
+	box-shadow: inset 0px 0px 0px 0px red;
+	border-style:solid;
+}
+
 footer {
 	display: none;
 	position: absolute;
