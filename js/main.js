@@ -13,6 +13,13 @@ $("#armas").change(function () {
 	$("#placas").val("");
 	$("#molas").val("");
 	$("#gatilhos").val("");
+
+	$("#pecasCost").val("");
+	$("#placasCost").val("");
+	$("#molasCost").val("");
+	$("#gatilhosCost").val("");
+
+	$("#custoTotal").text("R$ 0,00")
 });
 
 $("#quantity").change(function () {
@@ -29,11 +36,11 @@ $("#quantity").change(function () {
 	$("#gatilhos").val(weapons[value].gatilhos * quantity);
 
 	$("#pecasCost").val("NENHUM - FARM");
-	$("#placasCost").val(formatMoney(components.placas * quantity));
-	$("#molasCost").val(formatMoney(components.molas * quantity));
-	$("#gatilhosCost").val(formatMoney(components.gatilhos * quantity));
+	$("#placasCost").val(formatMoney(components.placas * weapons[value].placas * quantity));
+	$("#molasCost").val(formatMoney(components.molas * weapons[value].molas * quantity));
+	$("#gatilhosCost").val(formatMoney(components.gatilhos * weapons[value].gatilhos * quantity));
 
-	$("#custoTotal").text(formatMoney((components.gatilhos + components.molas + components.placas) * quantity))
+	$("#custoTotal").text(formatMoney((components.gatilhos * weapons[value].gatilhos) + (components.molas * weapons[value].molas) + (components.placas * weapons[value].placas) * quantity));
 });
 
 function formatMoney(number) {
