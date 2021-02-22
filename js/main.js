@@ -19,7 +19,7 @@ $("#armas").change(function () {
 	$("#molasCost").val("");
 	$("#gatilhosCost").val("");
 
-	$("#custoTotal").text("R$ 0,00")
+	$("#custoTotal").text("R$ 0,00");
 });
 
 $("#quantity").change(function () {
@@ -40,9 +40,9 @@ $("#quantity").change(function () {
 	$("#molasCost").val(formatMoney(components.molas * weapons[value].molas * quantity));
 	$("#gatilhosCost").val(formatMoney(components.gatilhos * weapons[value].gatilhos * quantity));
 
-	$("#custoTotal").text(formatMoney((components.gatilhos * weapons[value].gatilhos * quantity) + (components.molas * weapons[value].molas * quantity) + (components.placas * weapons[value].placas * quantity)));
+	$("#custoTotal").text(formatMoney(components.gatilhos * weapons[value].gatilhos * quantity + components.molas * weapons[value].molas * quantity + components.placas * weapons[value].placas * quantity));
 });
 
 function formatMoney(number) {
-	return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(number);
+	return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(number);
 }
