@@ -38,11 +38,12 @@ a.toggleDark {
 	max-width: 250px;
 }
 
-input, select {
+input,
+select {
 	border-radius: 5px;
 	border: 1px solid #d4d4d4;
 	box-shadow: inset 0px 0px 0px 0px red;
-	border-style:solid;
+	border-style: solid;
 }
 
 footer {
@@ -60,7 +61,7 @@ footer {
 }
 
 body {
-	transition: color .5s ease, background-color .5s ease;
+	transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 .removeBottom {
