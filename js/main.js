@@ -22,11 +22,9 @@ $("#armas").change(function () {
 	$("#custoTotal").text("R$ 0,00");
 });
 
-
 function formatMoney(number) {
 	return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(number);
 }
-
 
 $("#quantity").change(function () {
 	let value = $("#armas").val();
